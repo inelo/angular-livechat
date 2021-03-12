@@ -22,7 +22,7 @@ export class LivechatWidgetComponent implements OnInit {
   @Output() public onChatStateChanged = new Subject<any>();
   @Output() public onChatWindowHidden = new Subject();
   @Output() public onChatWindowMinimized = new Subject();
-  @Output() public onChatWindowOpened = new Subject(); data
+  @Output() public onChatWindowOpened = new Subject();
   @Output() public onMessage = new Subject<any>();
   @Output() public onPostchatSurveySubmitted = new Subject<any>();
   @Output() public onPrechatSurveySubmitted = new Subject<any>();
@@ -76,9 +76,6 @@ export class LivechatWidgetComponent implements OnInit {
       s.parentNode.insertBefore(this.lc, s);
       this.lc.addEventListener('load', () => {
         this._chatLoaded(window['LC_API']);
-      });
-      this.lc.addEventListener('error', (error) => {
-        console.error(error);
       });
     }
   }
