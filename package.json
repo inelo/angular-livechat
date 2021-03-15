@@ -1,5 +1,5 @@
 {
-  "name": "@livechat/angular-widget",
+  "name": "@inelo/angular-livechat-widget",
   "version": "0.3.1",
   "author": "LiveChat, Inc",
   "description": "Angular component to integrate LiveChat with your single-page app",
@@ -11,11 +11,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/livechat/angular-livechat.git"
+    "url": "https://github.com/inelo/angular-livechat.git"
   },
-  "homepage": "https://github.com/livechat/angular-livechat",
-  "bugs": {
-    "url": "https://github.com/livechat/angular-livechat/issues"
+  "publishConfig": {
+    "registry": "https://nexus.inelo.pl/repository/npm-hosted/"
   },
   "peerDependencies": {
     "@angular/core": ">=2.4.0 <10.0.0",
